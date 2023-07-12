@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito&display=swap" rel="stylesheet">
+
+    <!-- CSS Reset : BEGIN -->
+<style>
+
+html,
+body {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    background: #f1f1f1;
+}
+
+    .btn btn-primary{
+            border-radius: 5px;
+    }
+
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* What it does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+
+/* What it does: Fixes webkit padding issue. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode:bicubic;
+}
+
+/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+a {
+    text-decoration: none;
+}
+
+/* What it does: A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+.a6S {
+    display: none !important;
+    opacity: 0.01 !important;
+}
+
+/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+.im {
+    color: inherit !important;
+}
+
+/* If the above doesn't work, add a .g-img class to any image in question. */
+img.g-img + div {
+    display: none !important;
+}
+
+/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+/* Create one of these media queries for each additional viewport size you'd like to fix */
+
+/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+    u ~ div .email-container {
+        min-width: 320px !important;
+    }
+}
+/* iPhone 6, 6S, 7, 8, and X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+    u ~ div .email-container {
+        min-width: 375px !important;
+    }
+}
+/* iPhone 6+, 7+, and 8+ */
+@media only screen and (min-device-width: 414px) {
+    u ~ div .email-container {
+        min-width: 414px !important;
+    }
+}
+
+</style>
+
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+<style>
+
+.primary{
+	background: #f3a333;
+}
+
+.bg_white{
+	background: #ffffff;
+}
+.bg_light{
+	background: #fafafa;
+}
+.bg_black{
+	background: #000000;
+}
+.bg_dark{
+	background: rgba(0,0,0,.8);
+}
+.email-section {
+
+    padding-top: 0.5em;
+    padding-right: 2.5em;
+    padding-bottom: 1.5em;
+    padding-left: 2.5em;
+}
+
+/*BUTTON*/
+.btn{
+	padding: 6px 10px;
+}
+.btn.btn-primary{
+	border-radius: 30px;
+	background: #f3a333;
+	color: #ffffff;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Playfair Display', serif;
+	color: #000000;
+	margin-top: 0;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.6;
+	color: rgba(0,0,0,.4);
+}
+
+a{
+	color: #f3a333;
+}
+
+table{
+}
+/*LOGO*/
+
+.logo h1{
+	margin: 0;
+}
+.logo h1 a{
+	color: #000;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*HERO*/
+.hero{
+	position: relative;
+}
+.hero img{
+
+}
+.hero .text{
+	color: rgba(255,255,255,.8);
+}
+.hero .text h2{
+	color: #ffffff;
+	font-size: 30px;
+	margin-bottom: 0;
+}
+
+
+/*HEADING SECTION*/
+.heading-section{
+}
+.heading-section h2{
+	color: #000000;
+	font-size: 28px;
+	margin-top: 0;
+	line-height: 1.4;
+}
+.heading-section .subheading{
+	margin-bottom: 20px !important;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(0,0,0,.4);
+	position: relative;
+}
+.heading-section .subheading::after{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #f3a333;
+	margin: 0 auto;
+}
+
+.heading-section-white{
+	color: rgba(255,255,255,.8);
+}
+.heading-section-white h2{
+	font-size: 28px;
+	font-family: 
+	line-height: 1;
+	padding-bottom: 0;
+}
+.heading-section-white h2{
+	color: #ffffff;
+}
+.heading-section-white .subheading{
+	margin-bottom: 0;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(255,255,255,.4);
+}
+
+
+.icon{
+	text-align: center;
+}
+.icon img{
+}
+
+
+
+.text-services{
+	padding: 10px 10px 0; 
+	text-align: center;
+}
+.text-services h3{
+	font-size: 20px;
+}
+
+/*BLOG*/
+.text-services .meta{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+
+.text-testimony .name{
+	margin: 0;
+}
+.text-testimony .position{
+	color: rgba(0,0,0,.3);
+
+}
+
+
+
+.img{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.img .icon{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: -25px;
+}
+.img .icon a{
+	display: block;
+	width: 60px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -25px;
+}
+
+
+
+/*COUNTER*/
+.counter-text{
+	text-align: center;
+}
+.counter-text .num{
+	display: block;
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: 700;
+}
+.counter-text .name{
+	display: block;
+	color: rgba(255,255,255,.9);
+	font-size: 13px;
+}
+
+
+/*FOOTER*/
+
+.footer{
+	color: rgba(255,255,255,.5);
+
+}
+.footer .heading{
+	color: #ffffff;
+	font-size: 20px;
+}
+.footer ul{
+	margin: 0;
+	padding: 0;
+}
+.footer ul li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+.footer ul li a{
+	color: rgba(255,255,255,1);
+}
+
+
+@media screen and (max-width: 500px) {
+
+	.icon{
+		text-align: left;
+	}
+
+	.text-services{
+		padding-left: 0;
+		padding-right: 20px;
+		text-align: left;
+	}
+
+}
+    
+    
+    #nice{
+     font-family: "Kaushan Script";
+     font-size: 25px;
+      
+     color: #00AEFD;
+    }
+    #nice1{
+     font-family: "Kaushan Script";
+     font-size: 18px;
+      
+     color: #00AEFD;
+    }
+
+</style>
+
+
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
+	<center style="width: 100%; background-color: #f1f1f1;">
+    <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+      &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+    </div>
+    <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+    	<!-- BEGIN BODY -->
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+         
+      	<tr>
+          
+          <td valign="middle" class="hero" style="background-image: url(images/top.JPG); background-size: cover; height: 180px;">
+           
+          </td>
+	      </tr><!-- end tr -->
+				<tr>
+          <td valign="middle" class="hero" style="background-image: url(images/topimage.JPG); background-size: cover; height: 300px;">
+           
+          </td>
+	      </tr><!-- end tr -->
+	      <tr>
+		      <td class="bg_white">
+		        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+		       
+		          <tr style="border-bottom: 1px solid #a5969652;">
+		            <td class="bg_white email-section">
+		            	<div class="heading-section" style="text-align: left; ">
+		            		
+		              	<h3 style="color:#5f5959;" id="nice">Dear Team,</h3>
+		              	<p style="font-size: 14px; margin-top: -19px; color: #000000; font-family: 'Montserrat';">
+In my 2018 end of year message to you, I reflected on the <span style="color: #00AEFD; font-size: 17px; font-weight:700;">importance of
+strengthening internal communication</span> and how I can better support you to realize
+the values, mission, and vision of UNICEF Uganda. Quite often, I find myself engaged in
+work that leaves me little opportunity for the kinds of face-to-face interactions that help
+build trusting, collaborative work communities. Starting this month, I’d like to experiment
+                            with some different approaches. </p>
+<p style="font-size: 15px; color: #000000; font-family: 'Montserrat';">
+The first approach involves my introduction of a monthly bulletin <br/><span id="nice1"><b>... from the Rep</b></span>. 
+<br/>Through this bulletin, and with invaluable support from Catherine N. as well as Elizabeth,
+I will be able to share highlights of meetings I attend in and out of the country and
+any materials relevant to the work we are doing in Uganda. Beyond that, I will also
+be celebrating and acknowledging some of the creative projects that we support and
+implement within the country office. Most days, I tend to interact largely with section
+chiefs and senior management. I plan to use this bulletin as a chance to meet with
+different project teams and departments outside management to learn more of the details
+of what you’re working on, and what your challenges and successes are. My goal is to
+highlight a staff team each month.</p><p style="font-size: 15px; color: #000000; font-family: 'Montserrat';">
+In addition, if the need arises, I will also use this space to offer my perspective on officerelated issues that may be percolating among fellow staff-members. Organizations like
+UNICEF are complex and sometimes difficult to navigate. During my own career, I’ve
+certainly seen instances in which the organization has been slow to respond to staff
+concerns in the time and manner that we would wish. My hope is that this bulletin will
+become a way to demystify some of those processes or concerns as they arise, while
+allowing me the opportunity to think about what I’m doing as the Rep, and how I can
+improve. </p>
+		            	</div>
+		            	
+		            </td>
+		          </tr><!-- end: tr -->
+		    
+		      
+		          <tr>
+		            <td class="bg_light email-section" style="padding: 0; width: 100%;">
+		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            	
+		            	</table>
+		            </td>
+		          </tr><!-- end: tr -->
+		          <tr style="border-bottom: 1px solid #a5969652;">
+		            <td class="bg_light email-section" style="padding: 0; width: 100%;">
+		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            		<tr>
+                      <td valign="middle" width="30%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td>
+                              <img src="images/bore.JPG" alt="" style="width: 100%; padding-left:10px; max-width: 650px; height: auto; margin: auto; display: block; padding-top: -10px;">
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="middle" width="70%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td class="text-services" style="text-align: left; padding: 20px 30px;">
+                            	<div class="heading-section">
+								            	
+								              
+								              	<p style="font-size: 13px; color:#000000; font-family: 'Montserrat'">For this inaugural issue of the bulletin, I would like to
+share some of the presentations that were highlighted
+                                                    at the <span style="color: #734f4f; font-weight:800;">Regional Management Team meeting</span> in
+Nairobi a few weeks ago. In particular, our WASH
+regional advisor, Dr. Samuel Godfrey, gave an excellent
+presentation on regional WASH statistics. Among
+other things, he showed <span style="color: #734f4f; font-weight:800;">how Uganda compares to
+the other ESAR countries concerning the WASH SDGs 6.1 and 6.2.</span> (We aren’t the worst, but we aren’t
+the best, either.)</p>
+                                 
+								              	<p><a style="background-color: #00AEFD; font-size: 10px; float: right; border-radius: 5px;" href="https://unicef.sharepoint.com/:p:/r/teams/ESAR/Meetings/_layouts/15/Doc.aspx?sourcedoc=%7BC37E3FD5-27F6-454C-BA75-E4DC7C281DB5%7D&file=RMT%20May%202019%20-%20Session%204a%20WASH%20SGodfrey.pptx&action=edit&mobileredirect=true" target="_blank"  class="btn btn-primary">READ MORE</a></p>
+                                       
+								            	</div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+		            	</table>
+		            </td>
+		          </tr><!-- end: tr -->
+                    
+                    <tr style="border-bottom: 1px solid #a5969652;">
+		            <td class="bg_light email-section" style="padding: 0; width: 100%;">
+		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            		<tr>
+                      <td valign="middle" width="30%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td>
+                              <img  src="images/hw.JPG" alt="" style="width: 100%; padding-left:10px; max-width: 700px; height: auto; margin: auto; display: block;">
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="middle" width="70%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td class="text-services" style="text-align: left; padding: 20px 30px;">
+                            	<div class="heading-section">
+								            	
+								              
+								              	<p style="font-size: 13px; color:#000000; font-family: 'Montserrat'">The regional advisor for ECD, Maniza Ntekim,
+meanwhile, spoke about the latest <span style="color: #734f4f; font-weight:800;">Early Childhood Development ESAR framework for action</span>, which
+will guide the next four years. (Five principles will
+be driving our work: progressive universalism,
+pragmatism, quality, sustainability & scale, and sticking
+to what we’re good at.)</p>
+                                 
+								              	<p><a style="background-color: #00AEFD; font-size: 10px; float: right;border-radius: 5px;" href="https://unicef.sharepoint.com/:p:/r/teams/ESAR/Meetings/_layouts/15/Doc.aspx?sourcedoc=%7B2C138351-0C4F-49D0-ACCB-7CC262CF2B57%7D&file=RMT%20May%202019%20-%20Session%203%20ECD%20Maniza.pptx&action=edit&mobileredirect=true" target="_blank" class="btn btn-primary">READ MORE</a></p>
+                                       
+								            	</div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+		            	</table>
+		            </td>
+		          </tr><!-- end: tr -->
+                    
+                         <tr style="border-bottom: 1px solid #a5969652;">
+		            <td class="bg_light email-section" style="padding: 0; width: 100%;">
+		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            		<tr>
+                      <td valign="middle" width="30%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td>
+                              <img  src="images/vacine.JPG" alt="" style="width: 100%; padding-left:10px; max-width: 700px; height: auto; margin: auto; display: block;">
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="middle" width="70%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td class="text-services" style="text-align: left; padding: 20px 30px;">
+                            	<div class="heading-section">
+								            	
+								              
+								              	<p style="font-size: 13px; color:#000000; font-family: 'Montserrat'">An important session on immunization offered some
+                                                    updates on the state of the <span style="color: #734f4f; font-weight:800;">Gavi alliance</span> within the
+region, while providing a deep-dive on <span style="color: #734f4f; font-weight:800;">immunization coverage across our countries</span>, and what achieving
+equitable access will require over the next four years.</p>
+                                 
+								              	<p><a style="background-color: #00AEFD; font-size: 10px; float: right; border-radius: 5px;" href="https://unicef.sharepoint.com/:p:/r/teams/ESAR/Meetings/_layouts/15/Doc.aspx?sourcedoc=%7B5653BCE3-52FE-4D27-BC0A-AAA40AA2AD5D%7D&file=UNICEF%20Malawi%20Innovation%20in%20Malawi%20RMT%20April%202019.pptx&action=edit&mobileredirect=true" target="_blank"  class="btn btn-primary">READ MORE</a></p>
+                                       
+								            	</div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+		            	</table>
+		            </td>
+		          </tr><!-- end: tr -->
+		     
+		      
+		    
+		            <td class="bg_white email-section">
+		            	<div class="heading-section" style="text-align: left; color:#000000; font-family: 'Montserrat'">
+		            		
+		              	
+		              	<p>Finally, there was a truly terrific meeting on data innovation within the Malawi country
+office. Believe it or not, Malawi is using aerial drones and artificial intelligence to identify
+infrastructure sites and assess the progress of construction projects. Fascinating work
+indeed!</p>
+		            	</div>
+		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            		<tr>
+                      <td valign="top" width="50%" style="padding-top: 20px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td style="padding-right: 10px;">
+                              <img src="images/tweet.JPG" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-services" style="text-align: left;">
+                            	
+                             		<p><a style="background-color: #00AEFD; font-size: 10px; float: right;border-radius: 5px;" href="https://unicef.sharepoint.com/:p:/r/teams/ESAR/Meetings/_layouts/15/Doc.aspx?sourcedoc=%7BB71AEDCD-ADD0-4277-89D6-32B1D7E56A20%7D&file=RMT%20May%202019%20Session%204b%20Immunization%20GFontana.pptx&action=edit&mobileredirect=true" target="_blank" class="btn btn-primary">READ MORE</a></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                 
+                    </tr>
+		            	</table>
+		            </td>
+		          </tr><!-- end: tr -->
+                  
+               <tr>
+		            <td class="bg_light email-section" style="padding: 0; width: 100%; background: rgb(225, 218, 210);">
+		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            		<tbody>
+                                <tr><p style="color:#000000; font-family: 'Montserrat'; padding-left: 30px; font-size:14px;">I would like to close by sharing a recent article from Devex that discusses</p></tr>
+                                
+                                <tr>
+                                
+                      <td valign="middle" width="60%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tbody><tr>
+                            <td class="text-services" style="text-align: left; padding: 0px 30px;">
+                            	<div class="heading-section">
+								            		
+								              
+                                   <h2 style="background: #10a2e4;     line-height: 2.3;  font-size:23px; color:#fff; text-align: center; font-family: 'Nunito'; display: inline; padding-top: 0px; padding-left: 5px; padding-right: 5px; ">Ways to progress</h2><br/>
+                                    <h2 style="background: #10a2e4; color:#fff; line-height: 2px; font-size:23px; text-align: center; display: inline; padding-top: 0px; padding-left: 5px; padding-right: 5px;  font-family: 'Nunito';">in your career</h2>
+								              	<p style="font-family: 'Montserrat'; color:#000000; font-size:14px; ">At various points in my own career
+journey, I’ve probably done all these
+things. I hope to help create an
+environment for others to be able to
+do the same.</p>
+								              	
+								            	</div>
+                            </td>
+                          </tr>
+                        </tbody></table>
+                      </td>
+                      <td valign="middle" width="40%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tbody><tr>
+                            <td>
+                                <a href="https://www.devex.com/news/how-to-progress-your-career-from-support-role-to-expert-94638" target="_blank"><img src="images/stairs.JPG" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
+                            </td>
+                          </tr>
+                        </tbody></table>
+                      </td>
+                    </tr>
+		            	</tbody></table>
+		            </td>
+		          </tr>
+                  
+                  
+		        <tr>
+          
+          <td valign="middle" class="hero" style="background-image: url(images/foot.JPG); background-size: cover; height: 100px; padding-bottom: 20px;">
+           
+          </td>
+	      </tr><!-- end tr -->
+		          
+		        </table>
+
+		      </td>
+		    </tr><!-- end:tr -->
+      <!-- 1 Column Text + Button : END -->
+      </table>
+ 
+    </div>
+  </center>
+
+
+
+</html>
